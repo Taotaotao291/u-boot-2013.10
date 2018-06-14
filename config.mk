@@ -279,7 +279,8 @@ CFLAGS_WARN := $(call cc-option,-Wno-format-nonliteral) \
 CFLAGS += $(CFLAGS_WARN)
 
 # Report stack usage if supported
-CFLAGS_STACK := $(call cc-option,-fstack-usage)
+# CFLAGS_STACK := $(call cc-option,-fstack-usage)
+CFLAGS_STACK := $(call cc-option,)
 CFLAGS += $(CFLAGS_STACK)
 
 BCURDIR = $(subst $(SRCTREE)/,,$(CURDIR:$(obj)%=%))
